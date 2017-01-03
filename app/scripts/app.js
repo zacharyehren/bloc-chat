@@ -1,5 +1,5 @@
 (function() {
-  function config($stateProvider, $locationProvide) {
+  function config($stateProvider, $locationProvider) {
    
     $locationProvider
       .html5Mode({
