@@ -8,10 +8,10 @@
     });
     
     $stateProvider
-    .state('main', {
+      .state('home', {
       url: '/',
-      controller: 'MainView as main',
-      templateUrl: '/templates/main.html'
+      controller: 'RoomsCtrl as rooms',
+      templateUrl: '/templates/home.html'
     });
     
   }
