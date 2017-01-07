@@ -1,1 +1,10 @@
-<h1>Home Page</h1>
+<section id="left-bar">
+  <div class="text-margin">
+    <h1 class="newClass">Bloc Chat</h1>
+    <div class="room-style" ng-repeat="room in rooms.roomsList track by $index">
+      <div> {{ room.$value }} </div>
+    </div>
+  </div>  
+</section>
+
+
