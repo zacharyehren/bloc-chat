@@ -13,6 +13,12 @@ h1 {
   color: #9a9a9c;
 }
 
+.left-bar-container {
+  position: relative;
+  padding: 0 0 0 250px;
+  background: transparent;
+}
+
 #left-bar {
   position: absolute;
   background-color: #dedede;
