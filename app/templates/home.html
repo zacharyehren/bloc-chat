@@ -1,6 +1,7 @@
 <section id="left-bar">
   <div class="text-margin">
     <h1>Bloc Chat</h1>
+    <button ng-controller="modalRoom" ng-click="modalRoom.openModal()">New Room</button>  
     <div class="room-style" ng-repeat="room in rooms.roomsList track by $index">
       <div> {{ room.$value }} </div>
     </div>
