@@ -8,7 +8,9 @@
     };
     
     this.openModal = function() {
-      $uibModal.open();
+      $uibModal.open({
+          templateUrl: '/templates/modal.html'
+        });
     }
   }
   
