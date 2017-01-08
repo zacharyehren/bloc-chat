@@ -12,13 +12,6 @@
       url: '/',
       controller: 'RoomsCtrl as rooms',
       templateUrl: '/templates/home.html'
-    })
-    
-    //Do I need to inject the modal as a state? 
-      .state('modal'), {
-      url: '/',
-      controller: 'ModalCtrl as modalRoom',
-      templateUrl: '/templates/modal.html'
     });
 
   }
