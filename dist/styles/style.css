@@ -13,18 +13,18 @@ h1 {
   color: #9a9a9c;
 }
 
-.left-bar-container {
-  position: relative;
-  padding: 0 0 0 250px;
-  background: transparent;
+.col-md-3, .col-sm-3, .col-lg-3 {
+  background-color: #dedede;
+  margin-top: -8px;
+  margin-left: 8px;
+  padding-bottom: 100%;
 }
 
-#left-bar {
+
+.modal-display {
   position: absolute;
+  left: 50%;
+  top: 30%;
   background-color: #dedede;
-  width: 250px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  padding: 25px;
 }

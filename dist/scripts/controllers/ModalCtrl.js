@@ -1,6 +1,9 @@
 (function() {
   function ModalCtrl(Room, $uibModal) {
-    this.newRoom = Room.create;
+    this.newRoom = function() {
+      var newRoomName = document.getElementsByName("newRoomName");
+      Room.create(newRoomName);
+    };
 
     this.cancelModal = function() {
       $uibModal.close();
@@ -8,12 +11,13 @@
 
     this.openModal = function() {
       $uibModal.open({
-          templateUrl: '/templates/modal.html'
-        });
-    }
+        templateUrl: '/templates/modal.html'
+      });
+    };
   }
 
   angular
     .module('blocChat')
-    .controller('ModalCtrl', ['Room', ModalCtrl]);
+    .controller('ModalCtrl', ['Room', '$uibModal', ModalCtrl]);
 })();
+
