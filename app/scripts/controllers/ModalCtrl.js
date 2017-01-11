@@ -1,18 +1,20 @@
 (function() {
   function ModalCtrl(Room, $uibModal) {
-    this.newRoom = function() {
-      var newRoomName = document.getElementsByName("newRoomName");
-      Room.create(newRoomName);
-    };
-
-    this.cancelModal = function() {
-      $uibModal.close();
-    };
 
     this.openModal = function() {
-      $uibModal.open({
-        templateUrl: '/templates/modal.html'
+      var modalInstance = $uibModal.open({
+        animation: this.animationsEnabled,
+        templateUrl: '/templates/modal.html',
+        controller: 'ModalInstanceCtrl',
+        controllerAs: 'modal'
       });
+      
+      modalInstance.result.then(
+        function(name) {
+          alert("Got to promise");
+          Room.create(name);
+        }
+      )
     };
   }
 
