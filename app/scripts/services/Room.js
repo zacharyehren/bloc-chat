@@ -7,7 +7,7 @@
     return {
       all: rooms,
       create: function(newRoom) {
-        console.log("got to create in room");
+        alert("got to create in room");
         rooms.$add(newRoom);
       }
     };
