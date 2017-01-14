@@ -2,7 +2,7 @@
   <h2>Create New Room</h2>
   <p>Enter a room name</p>
   <form>
-    <input class="input-style" type="text"><br>
+    <input ng-model="modal.name" class="input-style" type="text"><br>
     <button class="cancel-button-style" ng-click="modal.cancelModal()"><span class="cancel-button-text">Cancel</span></button>
     <button class="create-button-style" ng-click="modal.newRoom()"><span class="create-button-text">Create Room</span></button>
   </form>
