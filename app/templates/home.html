@@ -1,10 +1,14 @@
 <section class="row">
   <div class="text-margin col-md-3 col-sm-3 col-lg-3">
-    <h1 class="newClass">Bloc Chat</h1>
-    <div class="room-style" ng-repeat="room in rooms.roomsList track by $index">
-      <div> {{ room.$value }} </div>
-    </div>
+    <span class="header-button-container">
+      <h1>Bloc Chat</h1>
+      <section class="new-room-button" ng-controller="ModalCtrl as modalRoom">
+        <button ng-click="modalRoom.openModal()"><span class="new-room-text">New Room</button></span>
+      </section>
+    </span>
+      <div class="room-margin" ng-repeat="room in rooms.roomsList track by $index">
+        <div> {{ room.$value }} </div>
+      </div> 
   </div>  
 </section>
-
 

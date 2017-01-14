@@ -1,10 +1,30 @@
 h1 {
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+h2, p {
+  font-family: sans-serif;
+}
+
+.header-button-container {
+  display: flex;
 }
 
 .text-margin {
   margin-left: 10px;
+}
+
+.new-room-button {
+  margin-top: 30px;
+  margin-left: 15px;
+  border-style: none;
+}
+
+.new-room-text {
+  font-family: sans-serif;
+  font-size: 15px;
+  border: none;
 }
 
 .room-margin {
@@ -18,4 +38,47 @@ h1 {
   margin-top: -8px;
   margin-left: 8px;
   padding-bottom: 100%;
+}
+
+
+.modal-display {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  background-color: #dedede;
+  padding: 25px;
+  width: 25%;
+}
+
+.input-style {
+  margin: auto;
+  display: block;
+  width: 99%;
+}
+
+.create-button-style {
+  width: 49%;
+  padding: 10px 0px;
+  background-color: #979797;
+  border-style: none;
+}
+
+.cancel-button-style {
+  width: 49%;
+  padding: 10px 0px;
+  border-style: none;
+}
+
+
+.create-button-text {
+  font-family: sans-serif;
+  font-size: 15px;
+  border: none;
+  color: white;
+}
+
+.cancel-button-text {
+  font-family: sans-serif;
+  font-size: 15px;
+  border: none;
 }
