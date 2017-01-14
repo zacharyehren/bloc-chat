@@ -6,7 +6,7 @@
         <button ng-click="modalRoom.openModal()"><span class="new-room-text">New Room</button></span>
       </section>
     </span>
-      <div class="room-margin" ng-repeat="room in rooms.roomsList track by $index">
+      <div class="room-margin" ng-repeat="room in rooms.roomsList track by $index" ui-sref="roomContainer">
         <div> {{ room.$value }} </div>
       </div> 
   </div>  

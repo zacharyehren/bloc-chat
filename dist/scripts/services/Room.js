@@ -9,6 +9,7 @@
       create: function(newRoom) {
         rooms.$add(newRoom);
       }
+      
     };
   }
 
