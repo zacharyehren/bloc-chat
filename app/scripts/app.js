@@ -12,14 +12,7 @@
       url: '/',
       controller: 'RoomsCtrl as rooms',
       templateUrl: '/templates/home.html'
-    })
-      
-      .state('roomContainer', {
-      url: '/',
-      controller: 'RoomContainerCrl as roomContainer',
-      templateUrl: '/templates/roomContainer.html'
     });
-    
  
 
   }
