@@ -7,9 +7,14 @@
       </section>
     </span>
       <div class="room-margin" ng-repeat="room in rooms.roomsList track by $index">
-        <div ng-click="openRoomContainer()"> {{ room.$value }} </div>
-      </div> 
-  </div>  
+        <a href="" ng-click="rooms.changeRoom(room)">{{ room.$value }}</a>
+      </div>
+  </div>
+  <div class="col-md-8 col-sm-8 col-lg-8">
+    <section>
+      <div class="container">
+          <h2>{{ rooms.currentRoom.$value }}</h2>
+      </div>
+    </section>
+  </div>
 </section>
-<room-container></room-container>
-
