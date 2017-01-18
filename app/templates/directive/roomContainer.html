@@ -1,6 +1,9 @@
-<section class="row">
-  <div class="col-sm-9 col-md-9 col lg9">
-    <h3> {{ roomContainer.roomsList }} </h3>
+<section ng-controller='roomContainerCtrl'>
+  <div class="col-md-8 col-sm-8 col-lg-8">
+    <section>
+      <div class="container">
+        <h2>{{ rooms.currentRoom.$value }}</h2>
+      </div>
+    </section>
   </div>
 </section>
-
