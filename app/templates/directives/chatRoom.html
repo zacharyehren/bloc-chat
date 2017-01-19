@@ -1,9 +1,6 @@
-<section class="row">
-  <div class="col-sm-9 col-md-9 col-lg-9">
-    <h2> {{ rooms.currentRoom.$value}} </h2>
-    <!--currentRoom can be accessed from the controller even though it's within a function? -->
-    <ul>  
-      <li></li>
-    </ul>
-  </div>
-</section>
+<div class="chat-room col-sm-9 col-md-9 col-lg-9">
+  <h2> {{ selectedRoom.$value}} </h2>
+  <ul class="messages">
+    <!-- <li ng-repeat="message in selectedRoom.messages">{{ message.content }}</li> -->
+  </ul>
+</div>
