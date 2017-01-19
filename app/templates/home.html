@@ -8,7 +8,8 @@
     </span>
       <div class="room-margin" ng-repeat="room in home.roomsList track by $index">
         <a href="" ng-click="home.changeRoom(room)"> {{ room.$value }} </a>
-      </div> 
-  </div>  
+      </div>
+  </div>
+  <chat-room selected-room="home.currentRoom">
+  </chat-room>
 </section>
-

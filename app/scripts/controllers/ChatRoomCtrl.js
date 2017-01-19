@@ -1,9 +1,8 @@
 (function() {
-  function ChatRoomCtrl(HomeCtrl){
-    console.log(this.selectedRoom);
+  function ChatRoomCtrl(){
   }
-  
+
   angular
     .module('blocChat')
-    .controller('ChatRoomCtrl', ['HomeCtrl', ChatRoomCtrl]);
+    .controller('ChatRoomCtrl', [ChatRoomCtrl]);
 })();
