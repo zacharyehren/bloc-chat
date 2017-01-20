@@ -1,8 +1,12 @@
 (function() {
-  function ChatRoomCtrl(){
+  function ChatRoomCtrl(Message){
+    
+    this.launchRoom = Message.getByRoomId;
   }
+  
+  
 
   angular
     .module('blocChat')
-    .controller('ChatRoomCtrl', [ChatRoomCtrl]);
-})();
+    .controller('ChatRoomCtrl', 'Message',[ChatRoomCtrl]);
+})(); 
