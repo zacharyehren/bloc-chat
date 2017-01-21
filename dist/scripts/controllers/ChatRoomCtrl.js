@@ -1,7 +1,7 @@
 (function() {
   function ChatRoomCtrl(Message){
 
-    this.launchRoom = Message.getByRoomId;
+    this.launchRoom = Message.getRoomById;
   }
 
   angular

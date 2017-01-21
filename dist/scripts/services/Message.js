@@ -5,7 +5,7 @@
     //Assigns the messages variable to the messages database in firebase
   
     return{
-      getByRoomId: function(roomId){
+      getRoomById: function(roomId){
         ref.orderByChild("roomId").equalTo(roomId);
       }
     };
