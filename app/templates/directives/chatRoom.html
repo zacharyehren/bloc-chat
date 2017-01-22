@@ -1,10 +1,9 @@
 <section ng-controller="ChatRoomCtrl as chatRoom">
   <div class="chat-room col-sm-9 col-md-9 col-lg-9">
     <h2> {{ selectedRoom.$value}} </h2>
-    <p> {{ chatRoom.launchRoom(roomId) }} </p>
 
-    <ul class="messages">
-      <!-- <li ng-repeat="message in selectedRoom.messages">{{ message.content }}</li> -->
+    <!-- <ul class="messages">
+      <li ng-repeat="message in this.messages">{{ message.content }}</li> -->
     </ul>
   </div>
 </section>

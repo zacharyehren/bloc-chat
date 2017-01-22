@@ -1,10 +1,9 @@
 (function() {
-  function ChatRoomCtrl(Message){
-
-    this.launchRoom = Message.getRoomById;
+  function ChatRoomCtrl(Message, $scope){
+    console.log($scope.selectedRoom);
   }
 
   angular
     .module('blocChat')
-    .controller('ChatRoomCtrl', ['Message', ChatRoomCtrl]);
+    .controller('ChatRoomCtrl', ['$scope', 'Message', ChatRoomCtrl]);
 })();

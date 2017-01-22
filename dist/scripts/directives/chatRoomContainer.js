@@ -5,7 +5,6 @@ angular.module('blocChat')
       restrict: 'E',
       scope: {
         selectedRoom: '='
-        //What does selectedRoom do? A: passes selected-room from home.html to chatRoom.html
       },
       templateUrl: '/templates/directives/chatRoom.html'
     };
