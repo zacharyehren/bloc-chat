@@ -3,7 +3,8 @@
     <h2> {{ selectedRoom.$value}} </h2>
 
     <ul class="messages">
-      <li ng-repeat="message in messages">{{ message.content }}</li>
+      <li ng-repeat="message in messages track by $index">
+        {{ message.content }}</li>
     </ul>
   </div>
 </section>
