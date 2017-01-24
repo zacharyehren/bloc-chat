@@ -3,7 +3,8 @@ angular.module('blocChat')
     return {
       restrict: 'E',
       scope: {
-        selectedRoom: '='
+        selectedRoom: '=',
+        messages: '='
       },
       templateUrl: '/templates/directives/chatRoom.html'
     };

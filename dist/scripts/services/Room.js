@@ -2,6 +2,7 @@
   function Room($firebaseArray) {
     var roomsRef = firebase.database().ref().child("rooms");
     var rooms = $firebaseArray(roomsRef);
+    //assigns the rooms variable to rooms database in Firebase
 
 
     return {
