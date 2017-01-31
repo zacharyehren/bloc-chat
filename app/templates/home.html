@@ -6,9 +6,10 @@
         <button ng-click="modalRoom.openModal()"><span class="new-room-text">New Room</button></span>
       </section>
     </span>
-      <div class="room-margin" ng-repeat="room in rooms.roomsList track by $index">
-        <div> {{ room.$value }} </div>
-      </div> 
-  </div>  
+      <div class="room-margin" ng-repeat="room in home.roomsList track by $index">
+        <a href="" ng-click="home.changeRoom(room)"> {{ room.$value }} </a>
+      </div>
+  </div>
+  <chat-room selected-room="home.currentRoom" messages="home.messages">
+  </chat-room>
 </section>
-
