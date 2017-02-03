@@ -82,3 +82,31 @@ h2, p {
   font-size: 15px;
   border: none;
 }
+
+.message-field {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  background-color: white;
+  padding: 15px 0;
+}
+
+.send-button {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  font-size: 25px;
+  background-color: #4a4a4a;
+  padding: 15px 10px;
+  color: white;
+}
+
+
+
+
+
+
+

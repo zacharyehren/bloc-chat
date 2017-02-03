@@ -1,4 +1,4 @@
-<section>
+<section class="row">
   <div class="chat-room col-sm-9 col-md-9 col-lg-9">
     <h2> {{ selectedRoom.$value}} </h2>
 
@@ -8,3 +8,11 @@
     </ul>
   </div>
 </section>
+<section ng-controller="MessageCtrl as message">
+  <form>
+      <input class="message-field" type="text" placeholder="Write your message here..." ng-model="message.newInput">
+      <button class="send-button" ng-click="message.submit()">Send</button>
+    </form>
+</section>
+
+

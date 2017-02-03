@@ -8,6 +8,7 @@
       this.messages = Message.getRoomById(this.currentRoom.$id);
       console.log(this.messages);
     }
+    
   }
 
   angular
