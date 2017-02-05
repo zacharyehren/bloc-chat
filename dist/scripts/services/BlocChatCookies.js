@@ -10,14 +10,18 @@
         controllerAs: 'usernameModal'
       });
       
-      usernameModalInstance.result.then(
+        usernameModalInstance.result.then(
         function(username) {
           $cookies.put('blocChatCurrentUser', username);
           console.log(username);
           return username;
       })
+      
     }
-  }
+    return {
+      username: currentUser
+      }
+    };
   
   angular 
     .module('blocChat')

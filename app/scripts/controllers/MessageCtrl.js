@@ -1,9 +1,9 @@
 (function() {
   function MessageCtrl(Message) {
-    this.newInput = Message.addMessage;
-    this.submit = function(newMessage) {
-      Message.send(newMessage);
-      console.log('got to controller');
+    this.newInput;
+    this.submit = function() {
+      Message.send(this.newInput);
+      console.log(this.newInput);
     };
   }
     
