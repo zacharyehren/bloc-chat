@@ -1,7 +1,6 @@
 <section class="row">
   <div class="chat-room col-sm-9 col-md-9 col-lg-9">
     <h2> {{ selectedRoom.$value}} </h2>
-
     <ul class="messages">
       <li ng-repeat="message in messages track by $index">
         {{ message.$value }}</li>
