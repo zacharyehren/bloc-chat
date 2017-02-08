@@ -1,7 +1,6 @@
 (function() {
   function BlocChatCookies($cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
-    console.log(currentUser);
     if (!currentUser || currentUser === '') {
       var usernameModalInstance = $uibModal.open({
         animation: this.animationsEnabled,
@@ -9,21 +8,20 @@
         controller: 'UsernameModalInstanceCtrl',
         controllerAs: 'usernameModal'
       });
-      
+
         usernameModalInstance.result.then(
         function(username) {
           $cookies.put('blocChatCurrentUser', username);
-          console.log(username);
           return username;
       })
-      
+
     }
     return {
       username: currentUser
       }
     };
-  
-  angular 
+
+  angular
     .module('blocChat')
     .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();

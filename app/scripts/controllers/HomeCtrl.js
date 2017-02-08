@@ -4,11 +4,14 @@
 
     this.changeRoom = function(room) {
       this.currentRoom = room;
-      console.log(this.currentRoom.$id);
       this.messages = Message.getRoomById(this.currentRoom.$id);
-      console.log(this.messages);
     }
-    
+
+    this.submit = function() {
+      Message.send(this.newInput, this.currentRoom.$id);
+      this.newInput = "";
+    };
+
   }
 
   angular
