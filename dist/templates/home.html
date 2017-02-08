@@ -10,6 +10,18 @@
         <a href="" ng-click="home.changeRoom(room)"> {{ room.$value }} </a>
       </div>
   </div>
-  <chat-room selected-room="home.currentRoom" messages="home.messages">
-  </chat-room>
+  <section class="row">
+    <div class="chat-room col-sm-9 col-md-9 col-lg-9">
+      <h2> {{ home.currentRoom.$value}} </h2>
+      <ul class="messages">
+        <li ng-repeat="message in home.messages track by $index">
+          {{ message.username }} : {{ message.content }}
+        </li>
+      </ul>
+      <form>
+          <input class="message-field" type="text" placeholder="Write your message here..." ng-model="home.newInput" />
+          <button class="send-button" ng-click="home.submit()">Send</button>
+        </form>
+    </div>
+  </section>
 </section>
