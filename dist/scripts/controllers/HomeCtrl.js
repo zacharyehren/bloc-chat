@@ -8,8 +8,11 @@
     }
 
     this.submit = function() {
-      Message.send(this.newInput, this.currentRoom.$id);
+     if(this.newInput === " "){
+       return;
+     } else{ Message.send(this.newInput, this.currentRoom.$id);
       this.newInput = "";
+      }
     };
 
   }
