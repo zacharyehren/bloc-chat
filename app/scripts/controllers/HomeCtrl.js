@@ -8,7 +8,7 @@
     }
 
     this.submit = function() {
-     if(this.newInput === " "){
+     if(this.newInput.length <= 0){
        return;
      } else{ Message.send(this.newInput, this.currentRoom.$id);
       this.newInput = "";
