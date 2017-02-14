@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl(Room, Message) {
+  function HomeCtrl(Room, Message, UserOnline) {
     this.roomsList = Room.all;
 
     this.changeRoom = function(room) {
@@ -14,10 +14,13 @@
       this.newInput = "";
       }
     };
+    
+    this.listOnlineUser = UserOnline.online;
+    console.log(UserOnline.online);
 
   }
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['Room', 'Message', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', 'Message', 'UserOnline', HomeCtrl]);
 })();
